@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "outDir": "ignored",
+        "noEmit": true,
+        "incremental": false,
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "target": "es6",
+        "downlevelIteration": true,
+        "lib": ["es6", "dom"],
+        "declaration": false,
+        "declarationMap": false,
+        "sourceMap": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "importHelpers": true,
+        "jsx": "react",
+        "forceConsistentCasingInFileNames": true,
+        "paths": {},
+        "strict": true,
+        "strictNullChecks": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "exactOptionalPropertyTypes": false,
+        "types": [
+            "node"
+        ],
+        "resolveJsonModule": false,
+        "rootDirs": ["src"]
+//        // Prevent emitting "use strict" at the top of the esbuild output, which breaks logging of callsite etc
+//        "alwaysStrict": false
+    },
+    "compileOnSave": true,
+    "references": [],
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        ".idea"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "wasm-dataflow",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./pkg/wasm_dataflow.d.ts",
+            "default": "./pkg/wasm_dataflow.js"
+        },
+        "./bindings": {
+            "types": "./bindings.ts"
+        }
+    },
+    "private": true,
+    "scripts": {
+        "generate-typescript-bindings": "cargo test export_bindings"
+    },
+    "author": "",
+    "license": "MIT"
+}
